@@ -42,3 +42,46 @@ Toolchain components:
 ```
 > rustc
 ```
+
+## Data Types
+
+# Scalar, holds a single value
+
+## Primitives
+- Integers
+- (u)unsiged 0 - 255
+- (i)signed -128 127 
+- isize, usize - related to the CPU architecture
+- floating points - singed
+
+## Bolean
+- True / False
+
+## Characters
+- A, B, C (ASCII)
+
+Rush uses 4 Bytes, 4294967296, characters in Unicode-32 table, basically support everything
+
+# Compound, holds multiple values in a single variable\
+
+## Array
+- Multiples values of a single data types
+
+## Tuple
+- Multiples values of different data types
+
+Array and Tuples has A FIXED size
+
+## Strings
+
+We have two alternatives:
+
+### String
+- mutable
+- u8 data vector
+- stored on the heap
+
+### &str (hardcoded string)
+- Immutable
+- u8 data vector
+- stored on the heap/stack or compiled code
