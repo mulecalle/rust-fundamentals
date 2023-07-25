@@ -43,26 +43,26 @@ Toolchain components:
 > rustc
 ```
 
-## Data Types
+## Section: Data Types
 
-# Scalar, holds a single value
+### Scalar, holds a single value
 
-## Primitives
+### Primitives
 - Integers
 - (u)unsiged 0 - 255
 - (i)signed -128 127 
 - isize, usize - related to the CPU architecture
 - floating points - singed
 
-## Bolean
+### Bolean
 - True / False
 
-## Characters
+### Characters
 - A, B, C (ASCII)
 
 Rush uses 4 Bytes, 4294967296, characters in Unicode-32 table, basically support everything
 
-# Compound, holds multiple values in a single variable\
+### Compound, holds multiple values in a single variable
 
 ## Array
 - Multiples values of a single data types
@@ -85,3 +85,6 @@ We have two alternatives:
 - Immutable
 - u8 data vector
 - stored on the heap/stack or compiled code
+
+## Section: Variables
+
