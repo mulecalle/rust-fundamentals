@@ -1,32 +1,34 @@
 # Rust Fundamentals
 
-Rust is a `Static` and `Strong` language
+Rust is a `Static` and `Strong` programing language.
 
-#### Data types
+## How programing languages are:
+
+### Data types
 - Static - We know all of the data types at compile time
 - Dynamic - We only know the data types at run time
 
-#### Enforcements
+### Enforcements
 - Strong - Enforces rules on data type assignments
 - Weak - Has Few or no enforcement on data type assignments
 
-#### Language
-- Compiled, fast
-- Interpreted, on the fly - portable
+### Compilation
+- Compiled, used to be faster
+- Interpreted, slower since bit code in generated on each execution. More portable since they are "compiled" at run time
 
-#### Memory
+### Memory
 - Stack - pila, last in last out, when stack overflow happens, to many data -> we use the heap
 - Heap - has a pointer pointing to the data in memory 
 
 ![](./png/stack-heap.png)
 
-## Notes
+## Rust Key concepts
 
-- Cannot change the value of a variable - or declare the variable as mutable.
+- Most of the variables cannot change their value, you can handle this creating `mutable` variables, but they are not the default one.
 - `Ownership and Burrowing`, Core rust memory management
 - `Associated methods`, method associated to a data structure
 - `Crates`, modules
-- `Macros`, ! built-in functions 
+- `Macros`, (!) primitive functions 
 
 ## Rust Toolchain
 
@@ -43,48 +45,52 @@ Toolchain components:
 > rustc
 ```
 
-## Section: Data Types
+## Sections:
 
-### Scalar, holds a single value
+- [Data Types](#section-data-types)
+- [Variables](#section-variables)
 
-### Primitives
+### Section: Data Types
+
+#### Scalar, holds a single value
+
+##### Primitives
 - Integers
 - (u)unsiged 0 - 255
 - (i)signed -128 127 
 - isize, usize - related to the CPU architecture
 - floating points - singed
 
-### Bolean
+##### Bolean
 - True / False
 
-### Characters
+##### Characters
 - A, B, C (ASCII)
 
-Rush uses 4 Bytes, 4294967296, characters in Unicode-32 table, basically support everything
+Rush uses 4 Bytes, 4.294.967.296, characters in Unicode-32 table, basically support everything
 
-### Compound, holds multiple values in a single variable
+#### Compound, holds multiple values in a single variable
 
-## Array
+##### Array
 - Multiples values of a single data types
 
-## Tuple
+##### Tuple
 - Multiples values of different data types
 
-Array and Tuples has A FIXED size
+Array and Tuples has a FIXED size
 
-## Strings
+#### Strings
 
 We have two alternatives:
 
-### String
+##### String, notice the capital S
 - mutable
 - u8 data vector
 - stored on the heap
 
-### &str (hardcoded string)
+##### &str (hardcoded string)
 - Immutable
 - u8 data vector
 - stored on the heap/stack or compiled code
 
-## Section: Variables
-
+### Section: Variables
